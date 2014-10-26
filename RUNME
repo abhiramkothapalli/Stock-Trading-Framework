@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+
+echo beginning process
+echo
+{
+python "$(dirname "$0")/src/main.py"
+} || {
+cd "$(dirname "$0")/src/"
+python -c  "import sys; sys.dont_write_bytecode = True; import sendMail; sendMail.sendMail(str('Fatal Error, check error msg'))"
+}
