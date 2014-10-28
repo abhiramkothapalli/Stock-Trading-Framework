@@ -16,7 +16,7 @@ Python 2.7+
 
 Setup:
 
-RUNME offers a quick run of the framework on an UNIX system. for non-UNIX systems run main.py in the src directory.
+RUNME offers a quick run of the framework on an UNIX system. For non-UNIX systems run main.py in the src directory.
 
 src/variables.py contains important environment variables such as strategy name, starting balance, email notification setup, and debug settings
 
