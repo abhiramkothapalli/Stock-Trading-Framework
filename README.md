@@ -16,7 +16,7 @@ Python 2.7+
 
 Setup:
 
-RUNME offers a quick run of the framework on an UNIX system. for non-UNIX systems run main.py in the src directory.
+RUNME offers a quick run of the framework on an UNIX system. For non-UNIX systems run main.py in the src directory.
 
 src/variables.py contains important environment variables such as strategy name, starting balance, email notification setup, and debug settings
 
@@ -27,6 +27,8 @@ strategies are found under src/strategies/
 Every strategy contains the methods buyStock and sellStock which define the rules of when to buy and when to sell stocks using methods found in data.py. Every strategy also contains a strategy url which reaches out to Finviz to screen the initial stocks to test for buy/sell signals.
 
 Use sample.py or skeleton.py to get started
+
+A strategy is assigned in the variables file and is called in stockprocess.py, which loops the system to download a set of candidate stocks (using Finviz) and to calls the buyStock to verify the candidates and sellStock
 
 Happy trading!
 
