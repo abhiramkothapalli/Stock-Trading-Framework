@@ -19,7 +19,5 @@ def csvReader(strategy):
 	r = csv.reader(urllib.urlopen(strategy), delimiter=",")
 	for row in r:
 		list.append(row)
-	if not variables.forex:	
-		list.remove(list[0])
 		
 	return list
