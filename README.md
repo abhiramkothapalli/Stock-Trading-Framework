@@ -28,6 +28,8 @@ Every strategy contains the methods buyStock and sellStock which define the rule
 
 Use sample.py or skeleton.py to get started
 
+A strategy is assigned in the variables file and is called in stockprocess.py, which loops the system to download a set of candidate stocks (using Finviz) and to calls the buyStock to verify the candidates and sellStock
+
 Happy trading!
 
 
