@@ -19,5 +19,7 @@ def csvReader(strategy):
 	r = csv.reader(urllib.urlopen(strategy), delimiter=",")
 	for row in r:
 		list.append(row)
-		
+		if variables.log:
+			for l in list:
+				print l
 	return list
